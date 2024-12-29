@@ -1,0 +1,13 @@
+{
+  "name": "tilda-sendpulse",
+  "version": "1.0.0",
+  "description": "Middleware for forwarding Tilda payment data to SendPulse",
+  "main": "middleware.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "axios": "^1.3.6",
+    "express": "^4.18.2"
+  }
+}
