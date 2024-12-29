@@ -11,7 +11,7 @@ app.post('/webhook', async (req, res) => {
     const data = req.body;
     console.log('Received data:', data);
 
-    const sendPulseAPIUrl = 'https://api.sendpulse.com/some-endpoint'; 
+    const sendPulseAPIUrl = 'https://events.sendpulse.com/events/id/399417d44db44038ec32672c96f1c912/8888586'; 
     const response = await axios.post(sendPulseAPIUrl, {
       email: data.email,
       name: data.name,
