@@ -12,13 +12,13 @@ app.post('/webhook', async (req, res) => {
     console.log('Received data:', data);
 
     const sendPulseAPIUrl = 'https://events.sendpulse.com/events/id/399417d44db44038ec32672c96f1c912/8888586'; 
-    const response = await axios.post(sendPulseAPIUrl, {
-      email: data.email,
-      name: data.name,
-      phone: data.phone,
-      products: data.payment.products,
-      total_price: data.payment.amount
-    });
+    // const response = await axios.post(sendPulseAPIUrl, {
+    //   email: data.email,
+    //   name: data.name,
+    //   phone: data.phone,
+    //   products: data.payment.products,
+    //   total_price: data.payment.amount
+    // });
 
     console.log('SendPulse response:', response.data);
     res.status(200).send('Webhook processed');
