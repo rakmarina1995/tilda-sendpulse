@@ -20,7 +20,7 @@ app.post('/webhook', async (req, res) => {
     //   total_price: data.payment.amount
     // });
 
-    console.log('SendPulse response:', response.data);
+    // console.log('SendPulse response:', response.data);
     res.status(200).send('Webhook processed');
   } catch (error) {
     console.error('Error processing webhook:', error.message);
