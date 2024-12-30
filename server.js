@@ -24,6 +24,7 @@ app.post('/webhook', async (req, res) => {
     res.status(200).send('Webhook processed');
   } catch (error) {
     console.error('Error processing webhook:', error.message);
+    console.error('Error details:', error.response?.data || error.stack); 
     res.status(500).send('Error processing webhook');
   }
 });
